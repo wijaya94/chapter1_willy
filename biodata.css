@@ -1,13 +1,31 @@
+*{
+    margin:0 auto;
+    padding:0
+}
+.container{
+    border:1px coral solid;
+    background-color: blanchedalmond
+}
+
 h1{
     color:blue;
-    font-family:"Arial"
+    font-family:"Monotype Corsiva";
+    text-decoration: cyan ;
+    letter-spacing: 2px;
 }
 
 h2{
-    color:orange;
-
+    text-align: center;
+    color:mediumorchid;
+    text-decoration: underline
 }
 p{
     color:green;
     font-size:14px;
+    margin-bottom: 0px !important;
+    text-align: center;
+}
+
+li{
+    margin-left:20%;
 }
