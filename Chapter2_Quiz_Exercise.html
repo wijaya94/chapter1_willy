@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Chapter 2</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+
+        <h2 id="n1">Number 1: </h2>
+        <h2 id="op">Operand: </h2>
+        <h2 id="n2">Number 2: </h2>
+        <h2 id="res">Result: </h2>
+        <script type="text/javascript">
+            console.log("Calculator");
+
+            var num1 = parseInt(prompt("Masukkan Angka pertama"))
+            var num2 = parseInt(prompt("Masukkan Angka kedua"))
+
+            var operand = prompt("Pilih operand yang Anda inginkan [ + | - | * | / | ^ | Min | Max]")
+
+            document.getElementById("n1").innerText += " " + num1
+            document.getElementById("n2").innerText += " " + num2
+            document.getElementById("op").innerText += " " + operand
+            var resx =  document.getElementById("res")
+            var calc
+
+            if(operand == "+"){
+                calc = num1 + num2 
+            }
+            else if(operand == "-"){
+                calc = num1 - num2
+            }
+            else if(operand == "*"){
+                calc = num1 * num2
+            }
+            else if(operand == "/"){
+                calc = num1 / num2
+            }
+            else if(operand == "^"){
+                calc = Math.pow(num1, num2)
+            }
+            else if(operand == "Min"){
+                calc = Math.min(num1, num2)
+            }
+            else if(operand == "Max"){
+                calc = Math.max(num1, num2)
+            }
+            alert("Result: " + calc)
+            resx.innerText += " " + calc   
+
+        </script>
+    </body>
+</html>
